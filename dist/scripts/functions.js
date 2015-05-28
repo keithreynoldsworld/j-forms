@@ -30,10 +30,12 @@ var b = a.toLowerCase();
 
 function stringRepeat(a,b){
 	if(b===1){return a;}
-	for(var i = 0;i<b-1;i++){a = a+a;}
-	return a;
+	var c = ""
+	if(b>1){
+	for(var i = 0;i<b;i++){c += a;}
+	}
 
-
+	return c;
 
 };
 
